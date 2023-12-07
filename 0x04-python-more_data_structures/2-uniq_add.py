@@ -8,6 +8,6 @@ def uniq_add(my_list=[]):
     sum = 0
     for num in my_list:
         if num not in my_list:
-            sum += sum
+            sum += num
             new_list.append(num)
     return sum
