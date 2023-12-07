@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 def search_replace(my_list, search, replace):
+    """
+    the function that replace and search
+    """
     new_list = []
     for element in my_list:
         if element == search:
