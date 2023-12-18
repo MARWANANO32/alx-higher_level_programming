@@ -1,14 +1,22 @@
 #!/usr/bin/python3
+
 def safe_print_list_integers(my_list=[], x=0):
-    op = 0
-    ou = 0
-    while op < x:
+    """Print the first x elements of a list that are integers.
+
+    Args:
+        my_list (list): The list to print elements from.
+        x (int): The number of elements of my_list to print.
+
+    Returns:
+        The number of elements printed.
+    """
+    a = 0
+    for i in range(0, x):
         try:
-            print("{:d}".format(my_list[op]), end = '')
-            ou += 1
+            print("{:d}".format(my_list[i]), end="")
+            a += 1
         except (ValueError, TypeError):
-            pass
-        op += 1
-    print()
-    return (ou)
+            continue
+    print("")
+    return (a)
 
